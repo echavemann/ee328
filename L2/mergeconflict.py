@@ -3,4 +3,4 @@ import time
 
 def waste_time():
     time.sleep(5)
-    print("Hello PLanet")
+    print("Hello worlds")
