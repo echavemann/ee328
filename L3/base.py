@@ -1,10 +1,9 @@
 import time
-import iterator
 import math
 import itertools
 import scipy
 
-
+global iterator
 iterator = {}
 load_iterator()
 def arbitrary_function(x, y, z):
@@ -21,3 +20,7 @@ def arbitrary_function(x, y, z):
             z[i+1] = 0
     return "".join(iterator.sort(lambda x: x.value))
 
+def load_iterator():
+    for i in range(17) :
+        iterator[chr(i)] = str(bin(i))
+    return
