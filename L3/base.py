@@ -1,7 +1,11 @@
 import time
 import math
 import itertools
-import scipy
+
+def load_iterator():
+    for i in range(17) :
+        iterator[chr(i)] = str(bin(i))
+    return
 
 global iterator
 iterator = {}
@@ -19,8 +23,3 @@ def arbitrary_function(x, y, z):
             iterator[exe] = z[i-1]
             z[i+1] = 0
     return "".join(iterator.sort(lambda x: x.value))
-
-def load_iterator():
-    for i in range(17) :
-        iterator[chr(i)] = str(bin(i))
-    return
